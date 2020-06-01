@@ -117,6 +117,16 @@ h2.style-5 {
   margin: 0 1rem;
 }
 
+.nav-logo {
+  height: 100px;
+  padding: 1rem 0;
+  transition: all .3s;
+}
+
+.nav-logo-scrolled {
+  height: 70px;
+}
+
 /* HERO SECTION */
 #landing-svg {
   height: 20rem;
@@ -185,7 +195,13 @@ header {
 
 header.header-mobile {
   overflow-y: scroll;
+  /* background: transparent;
+  transition: all .3s; */
 }
+
+/* .header-mobile-scrolled {
+  background: #18191b !important;
+} */
 
 /* #section-welcome:before {
   content: '';
@@ -565,6 +581,15 @@ span.overlay {
   height: 8rem;
 }
 
+.footer-logo {
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.pad-bot-50 {
+  padding-bottom: 50px;
+}
+
 /* CONTACT PAGE */
 .contact-content {
   background: white !important;
@@ -838,12 +863,12 @@ address span a:hover {
 @media only screen and (max-width: 414px) {
 
   .page-about #subheader {
-    background-image: url(../images-bunkis/new_team_brick_subheader.jpg);
+    /* background-image: url(../images-bunkis/new_team_brick_subheader.jpg); */
     position: relative;
   }
 
   .page-about #subheader:after {
-    background-color: rgba(18, 43, 45, 0.8);
+    background-color: rgba(18, 43, 45, 0.2);
     bottom: 0;
     content: '';
     left: 0;
@@ -874,14 +899,15 @@ address span a:hover {
 /* OFFICE SECTION */
 .office-outside-photo {
   height: 520px;
+  object-position: bottom;
 }
 
 .office-reception-image {
-  background-image: url(../images-bunkis/reception-area.png) !important;
+  background-image: url(../images-bunkis/office/office.jpg) !important;
 }
 
 .office-procedure-image {
-  background-image: url(../images-bunkis/procedure-room.png) !important;
+  background-image: url(../images-bunkis/office/office.jpg) !important;
 }
 
 
@@ -1208,6 +1234,18 @@ nav li a {
 
   .individual-profile-photo-container {
     width: 100%;
+  }
+
+  .pad-bot-50 {
+    padding-bottom: 0;
+  }
+
+  .nav-logo {
+    height: 74px;
+  }
+
+  .nav-logo-scrolled {
+    height: 74px;
   }
 }
 

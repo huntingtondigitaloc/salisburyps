@@ -1461,8 +1461,10 @@ jQuery(document).ready(function() {
 // Handle all scroll events
 $(document).scroll(function() {
   $(this).scrollTop() > 100
-    ? $("#hero-svg").attr("class", "hero-svg-top shrink-logo")
-    : $("#hero-svg").attr("class", "hero-svg-top");
+    ? ($("#hero-svg").attr("class", "hero-svg-top shrink-logo"),
+    $('.nav-logo').addClass('nav-logo-scrolled'))
+    : ($("#hero-svg").attr("class", "hero-svg-top"),
+    $('.nav-logo').removeClass('nav-logo-scrolled'));
 });
 
 // Function to fetch Instagram feed
