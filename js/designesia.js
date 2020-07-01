@@ -1,6 +1,9 @@
 // © Copyright 2019 - Archi v2.8 by Designesia
 
 jQuery(document).ready(function() {
+  $('#menu-btn').click(()=>{
+    !$('.header-mobile').hasClass('height-auto') ? $('.header-mobile').addClass('background-black') : $('.header-mobile').removeClass('background-black')
+  })
   "use strict"; // use strict mode
 
   var de_header_style = 1; // 1 - solid, 2 - transparent
@@ -1465,6 +1468,9 @@ $(document).scroll(function() {
     $('.nav-logo').addClass('nav-logo-scrolled'))
     : ($("#hero-svg").attr("class", "hero-svg-top"),
     $('.nav-logo').removeClass('nav-logo-scrolled'));
+    $(this).scrollTop() > 100
+    ? $('.header-mobile').css('background-color', '#162a2d')
+    : $('.header-mobile').css('background-color', 'transparent')
 });
 
 // Function to fetch Instagram feed

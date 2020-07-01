@@ -24,6 +24,87 @@ h2.style-5 {
   fill: #dddddd !important;
 }
 
+a.btn-slider {
+  border-radius: 25px;
+}
+
+.text-light .btn-line, .text-light a.btn-line {
+  border-radius: 25px;
+}
+
+.background-black {
+  background: rgb(22, 42, 45) !important;
+}
+
+.discover-photo-container {
+  overflow: hidden;
+}
+
+.discover-photo-square {
+  width: 100%;
+  transition: all ease-in-out .3s;
+}
+
+/* .discover-photo-square:hover {
+  transform: scale(1.3);
+} */
+
+.discover-photo-square:before {
+  opacity: .5;
+}
+
+.discover-photo-container {
+  position: relative;
+}
+
+.hidden-discover-photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 6rem;
+  color: black;
+  font-size: 1.6rem;
+  line-height: 1.7em;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all  ease-in-out .3s;
+}
+
+.discover-photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.discover-photo-container:hover {
+  cursor: pointer;
+}
+
+.discover-photo-container:hover .discover-photo-square {
+  opacity: .1;
+  transform: scale(1.3);
+}
+
+.discover-photo-container:hover .discover-photo-text {
+  opacity: 0;
+}
+
+.discover-photo-container:hover .hidden-discover-photo-text {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 414px) {
   h2.style-5 {
     font-size: 4rem;
@@ -409,11 +490,11 @@ span.overlay {
 }
 
 .view-all-projects-header {
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   text-align: center;
   padding-right: 2rem;
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin: 0;
   transition: all 0.3s;
 }
@@ -1307,6 +1388,10 @@ nav li a {
     align-items: center;
     order: 2;
     padding-top: 2rem;
+  }
+
+  header.header-mobile {
+    background: transparent;
   }
 
   .photos-content-wrapper {
