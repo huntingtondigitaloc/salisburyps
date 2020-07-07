@@ -105,6 +105,11 @@ a.btn-slider {
   opacity: 1;
 }
 
+.doctor-light-text-hero {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 414px) {
   h2.style-5 {
     font-size: 4rem;
@@ -539,6 +544,171 @@ span.overlay {
 #section-steps-4 h4,
 #section-steps-4 p {
   color: #fff;
+}
+
+/* INSTAGRAM SECTION */
+
+.instagram {
+  padding: 100px 0;
+  background-color: rgb(237, 237, 237) !important;
+}
+
+.instagram h2 {
+  text-align: center;
+}
+
+.instagram--header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.instagram-header-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.instagram-header {
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+
+.instagram-photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.instagram-photo-container:before {
+  content: none;
+}
+
+.instagram-photo-container:after {
+  content: none;
+}
+
+.instagram-photo {
+  height: 350px;
+  width: 350px;
+  margin: 10px 0;
+  overflow: hidden;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: #000;
+}
+
+/* .instagram-photo {
+    position: relative;
+    height: 250px;
+    width: 123.21px;
+    margin: 5px 0;
+    overflow: hidden;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+} */
+
+.instagram-fetched {
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  object-fit: cover;
+}
+
+.instagram-photo:hover .instagram-fetched {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
+.instagram-icon-section {
+  font-size: 3rem;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 1800px) {
+  .instagram-photo-container {
+    margin: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 1749px) {
+  .instagram-photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .instagram-photo-container {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .instagram-photo {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .instagram {
+    padding: 80px 0;
+  }
+
+  /* .instagram-photo {
+    height: 200px;
+    width: 200px;
+  } */
+}
+
+@media only screen and (max-width: 938px) {
+  .instagram-photo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .instagram--header {
+    font-size: 18px;
+  }
+
+  .instagram-photo-container {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .instagram {
+    padding: 60px 0;
+  }
+
+  .instagram-header {
+    /* font-size: 1.5rem;
+    font-weight: 300; */
+  }
+
+  .instagram-icon-section {
+    font-size: 2rem;
+  }
+
+  .instagram-photo {
+    height: 170px;
+    width: 170px;
+    margin: 3px 0;
+  }
+
+  .instagram-photo-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .instagram-photo {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 /* SPECIALS SECTION */
@@ -1416,6 +1586,10 @@ nav li a {
   }
 
   .custom-hero-subtext {
+    font-size: 14px;
+  }
+
+  .doctor-light-text-hero {
     font-size: 14px;
   }
 }

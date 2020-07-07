@@ -1510,9 +1510,9 @@ function mapsSelector() {
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPod") != -1) || 
      (navigator.platform.indexOf("iPad") != -1))
-    window.open("maps://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
+    window.open("maps://maps.google.com/maps?daddr=42.273269,-71.800916&amp;ll=");
 
   else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
+    window.open("https://maps.google.com/maps?daddr=42.273269,-71.800916&amp;ll=");
 }
 
