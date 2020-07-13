@@ -24,6 +24,92 @@ h2.style-5 {
   fill: #dddddd !important;
 }
 
+a.btn-slider {
+  border-radius: 25px;
+}
+
+.text-light .btn-line, .text-light a.btn-line {
+  border-radius: 25px;
+}
+
+.background-black {
+  background: rgb(22, 42, 45) !important;
+}
+
+.discover-photo-container {
+  overflow: hidden;
+}
+
+.discover-photo-square {
+  width: 100%;
+  transition: all ease-in-out .3s;
+}
+
+/* .discover-photo-square:hover {
+  transform: scale(1.3);
+} */
+
+.discover-photo-square:before {
+  opacity: .5;
+}
+
+.discover-photo-container {
+  position: relative;
+}
+
+.hidden-discover-photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 6rem;
+  color: black;
+  font-size: 1.6rem;
+  line-height: 1.7em;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all  ease-in-out .3s;
+}
+
+.discover-photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.discover-photo-container:hover {
+  cursor: pointer;
+}
+
+.discover-photo-container:hover .discover-photo-square {
+  opacity: .1;
+  transform: scale(1.3);
+}
+
+.discover-photo-container:hover .discover-photo-text {
+  opacity: 0;
+}
+
+.discover-photo-container:hover .hidden-discover-photo-text {
+  opacity: 1;
+}
+
+.doctor-light-text-hero {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 414px) {
   h2.style-5 {
     font-size: 4rem;
@@ -117,6 +203,16 @@ h2.style-5 {
   margin: 0 1rem;
 }
 
+.nav-logo {
+  height: 100px;
+  padding: 1rem 0;
+  transition: all .3s;
+}
+
+.nav-logo-scrolled {
+  height: 70px;
+}
+
 /* HERO SECTION */
 #landing-svg {
   height: 20rem;
@@ -185,7 +281,13 @@ header {
 
 header.header-mobile {
   overflow-y: scroll;
+  /* background: transparent;
+  transition: all .3s; */
 }
+
+/* .header-mobile-scrolled {
+  background: #18191b !important;
+} */
 
 /* #section-welcome:before {
   content: '';
@@ -393,11 +495,11 @@ span.overlay {
 }
 
 .view-all-projects-header {
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   text-align: center;
   padding-right: 2rem;
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin: 0;
   transition: all 0.3s;
 }
@@ -442,6 +544,171 @@ span.overlay {
 #section-steps-4 h4,
 #section-steps-4 p {
   color: #fff;
+}
+
+/* INSTAGRAM SECTION */
+
+.instagram {
+  padding: 100px 0;
+  background-color: rgb(237, 237, 237) !important;
+}
+
+.instagram h2 {
+  text-align: center;
+}
+
+.instagram--header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.instagram-header-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+.instagram-header {
+  padding-bottom: 2rem;
+  font-weight: 300;
+}
+
+.instagram-photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.instagram-photo-container:before {
+  content: none;
+}
+
+.instagram-photo-container:after {
+  content: none;
+}
+
+.instagram-photo {
+  height: 350px;
+  width: 350px;
+  margin: 10px 0;
+  overflow: hidden;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: #000;
+}
+
+/* .instagram-photo {
+    position: relative;
+    height: 250px;
+    width: 123.21px;
+    margin: 5px 0;
+    overflow: hidden;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+} */
+
+.instagram-fetched {
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  object-fit: cover;
+}
+
+.instagram-photo:hover .instagram-fetched {
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
+.instagram-icon-section {
+  font-size: 3rem;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 1800px) {
+  .instagram-photo-container {
+    margin: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 1749px) {
+  .instagram-photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .instagram-photo-container {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .instagram-photo {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .instagram {
+    padding: 80px 0;
+  }
+
+  /* .instagram-photo {
+    height: 200px;
+    width: 200px;
+  } */
+}
+
+@media only screen and (max-width: 938px) {
+  .instagram-photo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .instagram--header {
+    font-size: 18px;
+  }
+
+  .instagram-photo-container {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .instagram {
+    padding: 60px 0;
+  }
+
+  .instagram-header {
+    /* font-size: 1.5rem;
+    font-weight: 300; */
+  }
+
+  .instagram-icon-section {
+    font-size: 2rem;
+  }
+
+  .instagram-photo {
+    height: 170px;
+    width: 170px;
+    margin: 3px 0;
+  }
+
+  .instagram-photo-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .instagram-photo {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 /* SPECIALS SECTION */
@@ -563,6 +830,15 @@ span.overlay {
 /* FOOTER */
 #footer-svg {
   height: 8rem;
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.pad-bot-50 {
+  padding-bottom: 50px;
 }
 
 /* CONTACT PAGE */
@@ -838,12 +1114,12 @@ address span a:hover {
 @media only screen and (max-width: 414px) {
 
   .page-about #subheader {
-    background-image: url(../images-bunkis/new_team_brick_subheader.jpg);
+    /* background-image: url(../images-bunkis/new_team_brick_subheader.jpg); */
     position: relative;
   }
 
   .page-about #subheader:after {
-    background-color: rgba(18, 43, 45, 0.8);
+    background-color: rgba(18, 43, 45, 0.2);
     bottom: 0;
     content: '';
     left: 0;
@@ -862,11 +1138,11 @@ address span a:hover {
 }
 
 .juris-memberships {
-  background-image: url(../images-bunkis/dr-bunkis-headshot.jpg) !important;
+  background-image: url(../images-bunkis/team/ekstrom.jpg) !important;
 }
 
 .juris-certifications {
-  background-image: url(../images-bunkis/bunkis_new_2.jpg) !important;
+  background-image: url(../images-bunkis/team/ekstrom.jpg) !important;
 }
 
 
@@ -874,14 +1150,15 @@ address span a:hover {
 /* OFFICE SECTION */
 .office-outside-photo {
   height: 520px;
+  object-position: bottom;
 }
 
 .office-reception-image {
-  background-image: url(../images-bunkis/reception-area.png) !important;
+  background-image: url(../images-bunkis/office/office.jpg) !important;
 }
 
 .office-procedure-image {
-  background-image: url(../images-bunkis/procedure-room.png) !important;
+  background-image: url(../images-bunkis/office/office.jpg) !important;
 }
 
 
@@ -1209,6 +1486,18 @@ nav li a {
   .individual-profile-photo-container {
     width: 100%;
   }
+
+  .pad-bot-50 {
+    padding-bottom: 0;
+  }
+
+  .nav-logo {
+    height: 74px;
+  }
+
+  .nav-logo-scrolled {
+    height: 74px;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1271,6 +1560,10 @@ nav li a {
     padding-top: 2rem;
   }
 
+  header.header-mobile {
+    background: transparent;
+  }
+
   .photos-content-wrapper {
     padding-bottom: 1rem;
   }
@@ -1293,6 +1586,10 @@ nav li a {
   }
 
   .custom-hero-subtext {
+    font-size: 14px;
+  }
+
+  .doctor-light-text-hero {
     font-size: 14px;
   }
 }

@@ -51,7 +51,7 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 #section-about-us-2{background:#fff; height:100%;}
 .de_light #section-about-us-2{background:none;}
 /* #section-welcome{background:url(../images/background/bg-4.jpg) top fixed;} */
-#section-welcome{background:url(../images-bunkis/landing_new_team_final.jpg) top fixed;}
+#section-welcome{background:url(../images-bunkis/landing/woman-in-white-coat-wearing-white-face-mask-3985163.jpg) top fixed;}
 #section-welcome-2{background:url(../images/background/bg-6.jpg) top fixed;}
 #section-welcome-3{background:url(../images/background/bg-7.jpg) top fixed;}
 #section-welcome-4{background:url(../images/background/bg-10.jpg) top fixed;}
@@ -126,6 +126,10 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 	-o-background-size: auto 100% !important;
 	background-size: auto 100% !important;
 	background-attachment:scroll !important;
+}
+
+#subheader:after {
+	background: rgba(255, 166, 0, 0.623);
 }
 
 /* media query */

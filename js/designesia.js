@@ -1,6 +1,9 @@
 // © Copyright 2019 - Archi v2.8 by Designesia
 
 jQuery(document).ready(function() {
+  $('#menu-btn').click(()=>{
+    !$('.header-mobile').hasClass('height-auto') ? $('.header-mobile').addClass('background-black') : $('.header-mobile').removeClass('background-black')
+  })
   "use strict"; // use strict mode
 
   var de_header_style = 1; // 1 - solid, 2 - transparent
@@ -1461,8 +1464,13 @@ jQuery(document).ready(function() {
 // Handle all scroll events
 $(document).scroll(function() {
   $(this).scrollTop() > 100
-    ? $("#hero-svg").attr("class", "hero-svg-top shrink-logo")
-    : $("#hero-svg").attr("class", "hero-svg-top");
+    ? ($("#hero-svg").attr("class", "hero-svg-top shrink-logo"),
+    $('.nav-logo').addClass('nav-logo-scrolled'))
+    : ($("#hero-svg").attr("class", "hero-svg-top"),
+    $('.nav-logo').removeClass('nav-logo-scrolled'));
+    $(this).scrollTop() > 100
+    ? $('.header-mobile').css('background-color', '#162a2d')
+    : $('.header-mobile').css('background-color', 'transparent')
 });
 
 // Function to fetch Instagram feed
@@ -1502,9 +1510,9 @@ function mapsSelector() {
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPod") != -1) || 
      (navigator.platform.indexOf("iPad") != -1))
-    window.open("maps://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
+    window.open("maps://maps.google.com/maps?daddr=42.273269,-71.800916&amp;ll=");
 
   else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
+    window.open("https://maps.google.com/maps?daddr=42.273269,-71.800916&amp;ll=");
 }
 
