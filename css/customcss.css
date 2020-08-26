@@ -793,6 +793,88 @@ span.overlay {
     flex-wrap: wrap;
 } */
 
+.main-all-photos-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-photos-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos-col {
+  background-color: #ffffffb5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-img-container {
+  /* height: 500px; */
+  height: 100% !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-all-patients-img {
+  height: 100%;
+  width: 50%;
+  /* object-fit: cover; */
+  object-fit: contain;
+  /* border: 1px solid #ffffffb5; */
+  /* background: white; */
+}
+
+.photos-content-wrapper {
+  height: 100%;
+  width: 100%;
+  background: none !important;
+}
+
+.photos-fluid-row {
+  height: 300px;
+    /* background: white; */
+    padding: 1rem;
+}
+
+.photos-col-horizontal {
+  height: 500px;
+  background-color: #ffffff7e;
+  margin-bottom: 2rem;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-before-image {
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+.border-right-white {
+  border-right: 1px solid white;
+}
+
+.individual-image-50-width {
+  width: 50%;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Overwritting background images for individual procedure blocks */
+/* ----------------------------------------------------------- */
+.height-400 {
+  height: 400px !important;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;
@@ -813,6 +895,19 @@ span.overlay {
 
   .widget-post-50 {
     width: 50%;
+  }
+
+  .photos-col-horizontal-tablet-small {
+    width: 100%;
+  }
+
+  .photos-col-horizontal-text {
+    margin-bottom: 0 !important;
+    padding-top: 1rem;
+  }
+
+  .photos-col-horizontal-tablet-small {
+    height: 250px;
   }
 }
 
@@ -1591,5 +1686,19 @@ nav li a {
 
   .doctor-light-text-hero {
     font-size: 14px;
+  }
+
+  .photos-col-horizontal-text {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    height: 250px;
+  }
+
+  .photos-col-horizontal-tablet-small {
+    height: 280px;
+  }
+
+  .photos-content-wrapper {
+    padding-bottom: 1rem;
   }
 }

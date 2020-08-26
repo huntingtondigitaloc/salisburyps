@@ -12,6 +12,7 @@ function createContentful() {
 
     client.getEntry(hash)
     .then(function (entry) {
+      console.log('entry', entry)
       const patientProcedure = entry.fields.procedure;
       const patientAge = entry.fields.age;
       const patientGender = entry.fields.gender;
@@ -22,6 +23,7 @@ function createContentful() {
       const patientPhotosAll = entry.fields.photos;
       const patientDetails = entry.fields.details;
       const patientDesc = entry.fields.patientDescription;
+      console.log('patient id:', patientID);
 
       const mainRow = $(".main-all-photos-page");
       mainRow.addClass('individual-photos-bg-white');
@@ -127,11 +129,11 @@ function createContentful() {
       const resultArr = splitArrayByGroups(photosArr, 2);
 
       for (i = 0; i < resultArr.length; i++) {
-        const photosColDiv = $("<div class='col-xs-12 col-md-6 col-md-offset-3 photos-col'>");
+        const photosColDiv = $("<div class='col-xs-12 col-md-8 col-md-offset-2 photos-col'>");
         const textMiddleDiv = $("<div class='text-middle'>");
-        const twentyTwentyContainer = $("<div class='twentytwenty-container'>");
-        const image1 = $("<img alt='dr bunkis before after photo' class='img-responsive individual-image-100-width' />");
-        const image2 = $("<img alt='dr bunkis before after photo' class='img-responsive individual-image-100-width' />");
+        const twentyTwentyContainer = $("<div class='flex-container'>");
+        const image1 = $("<img alt='dr bunkis before after photo' class='img-responsive individual-image-50-width' />");
+        const image2 = $("<img alt='dr bunkis before after photo' class='img-responsive individual-image-50-width' />");
 
         image1.attr("src", resultArr[i][0]);
         image2.attr("src", resultArr[i][1]);
@@ -172,6 +174,9 @@ function createContentful() {
       entries.items.forEach(function(entry) {
   
         const mainRow = $(".main-all-photos-page");
+        const allPhotosRow = $(".all-photos-row");
+        const mainColDivTest = $("<div class='col-xs-12 col-md-6 photos-col photos-col-test photos-col-horizontal wow fadeInUp animated' wow-delay='0s'>");
+        const mainImgContainer = $("<div class='main-img-container'>");
         const mainColDiv = $("<div class='col-xs-12 col-sm-6 col-md-4 photos-col wow fadeInUp animated' wow-delay='0s'>");
         const textMiddleDiv = $("<div class='text-middle'>");
         const twentyTwentyContainer = $("<div class='twentytwenty-container'>");
@@ -209,16 +214,46 @@ function createContentful() {
         const patientID = entry.fields.id;
         const patientPhotosAll = entry.fields.photos;
         const contentID = entry.sys.id;
+        console.log(entry)
 
+        const containerFluid = $("<div class='container-fluid'>");
+        const fluidRow = $("<div class='row photos-fluid-row'>");
+        const photoColHorizontalLeft = $("<div class='col-sm-12 col-md-6 photos-col-horizontal photos-col-horizontal-text wow fadeInUp animated' wow-delay='0s'>");
+        const photoColHorizontalRight = $("<div class='col-sm-12 col-md-6 photos-col-horizontal photos-col-horizontal-tablet-small wow fadeInUp animated' wow-delay='0s'>");
+        
+        // ----------- SECOND TEST horizontal------------- //
+        // mainRow.append(mainColDivTest);
+        mainRow.append(photoColHorizontalLeft, photoColHorizontalRight);
+        photoColHorizontalLeft.append(mainImgContainer)
 
-  
-        mainRow.append(mainColDiv);
-        mainColDiv.append(textMiddleDiv);
-        textMiddleDiv.append(twentyTwentyContainer);
-        mainColDiv.append(photoContentsWrapper);
+        photoColHorizontalRight.append(photoContentsWrapper);
         photoContentsWrapper.append(photoHeaderH3);
         photoHeaderH3.append(photoHeaderSpan);
         photoHeaderSpan.text(patientProcedure);
+
+
+
+        // ----------- END SECOND TEST horizontal------------- //
+
+
+        // TEST //
+        // mainRow.append(mainColDivTest);
+        // mainColDivTest.append(mainImgContainer);
+        // mainColDivTest.append(photoContentsWrapper);
+        // photoContentsWrapper.append(photoHeaderH3);
+        // photoHeaderH3.append(photoHeaderSpan);
+        // photoHeaderSpan.text(patientProcedure);
+        // TEST END //
+
+
+  
+        // mainRow.append(mainColDiv);
+        // mainColDiv.append(textMiddleDiv);
+        // textMiddleDiv.append(twentyTwentyContainer);
+        // mainColDiv.append(photoContentsWrapper);
+        // photoContentsWrapper.append(photoHeaderH3);
+        // photoHeaderH3.append(photoHeaderSpan);
+        // photoHeaderSpan.text(patientProcedure);
 
         viewDetailsBtn.attr("id", patientID);
   
@@ -258,6 +293,22 @@ function createContentful() {
         image1.attr("src", patientPhoto1);
         image2.attr("src", patientPhoto2);
         twentyTwentyContainer.append(image1, image2);
+
+        // TEST STUFF
+        // const testImage1 = $("<img class='show-all-patients-img' alt='ocps before photo' >");
+        // const testImage2 = $("<img class='show-all-patients-img' alt='ocps before photo' >");
+        // testImage1.attr("src", patientPhoto1);
+        // testImage2.attr("src", patientPhoto2);
+        // mainImgContainer.append(testImage1, testImage2);
+        // END TEST STUFF
+
+        // SECOND TEST STUFF ----------- //
+        const testImage1 = $("<img class='show-all-patients-img' alt='ocps before photo' >");
+        const testImage2 = $("<img class='show-all-patients-img' alt='ocps before photo' >");
+        testImage1.attr("src", patientPhoto1);
+        testImage2.attr("src", patientPhoto2);
+        mainImgContainer.append(testImage1, testImage2);
+        // SECOND END TEST STUFF -------- //
       });
     }).then(() => {
       $(".twentytwenty-container").imagesLoaded(() => {
@@ -266,8 +317,6 @@ function createContentful() {
       })
     }); 
   }
-  console.log('1')
-  console.log('3')
 }
 
 
