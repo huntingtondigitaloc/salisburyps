@@ -171,7 +171,7 @@ a.btn-slider {
 /* LANDING REVIEWS SECTION */
 @media only screen and (max-width: 414px) {
   .de_testi blockquote p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -904,6 +904,40 @@ span.overlay {
   width: 100%;
 }
 
+.bg-white {
+  background-color: white !important;
+}
+
+.patient-link {
+  font-weight: bold;
+  color: black;
+}
+
+.patient-link:hover {
+  color: grey;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.forms-container {
+  flex-direction: column;
+}
+
+.form-button {
+  border-radius: 25px !important;
+  margin-bottom: 1rem;
+}
+
+.hero-logo-image {
+  width: 500px;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -989,6 +1023,16 @@ span.overlay {
 
 .contact-location-wrapper {
   padding: 45px 0 25px;
+}
+
+@media only screen and (max-width: 550px) {
+  .mobile-padding-top {
+    padding-top: 45px !important;
+  }
+
+  .hero-logo-image {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 414px) {
