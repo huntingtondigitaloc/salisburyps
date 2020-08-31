@@ -869,8 +869,39 @@ span.overlay {
 /* ----------------------------------------------------------- */
 /* Overwritting background images for individual procedure blocks */
 /* ----------------------------------------------------------- */
+.d-flex {
+  display: flex;
+}
+
 .height-400 {
   height: 400px !important;
+}
+
+.madison-bg {
+  background-image: url(../images-bunkis/model-blonde.jpeg) !important;
+}
+
+.skincancer-bg {
+  background-image: url(../images-bunkis/procedures/skin-cancer-bg.jpeg) !important;
+}
+
+.coolsculpting-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.coolsculpting-main {
+  width: 100%;
+}
+
+.renuvion-logo {
+  margin: 0 auto;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 
