@@ -1038,8 +1038,34 @@ span.overlay {
   width: 40%;
 }
 
+.d-flex-center-img {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .clarisonic-bg {
   background-image: url(../images-bunkis/products/cos-clarisonic-mia-05110-blog.jpg);
+}
+
+.skinceuticals-bg {
+  background-image: url(../images-bunkis/products/skinceuticals-1.png);
+  background-position: center;
+}
+
+.zo-bg {
+  background-image: url(../images-bunkis/products/ZO-Skin-Health.jpg);
+  background-position: center;
+}
+
+.alphaeon-bg {
+  background-image: url(../images-bunkis/products/alphaeon-serum.png);
+  background-position: center;
+}
+
+.alphaeon-2-bg {
+  background-image: url(../images-bunkis/products/alphaeon-before.jpg);
+  background-position: center;
 }
 
 @media only screen and (max-width: 768px) {
