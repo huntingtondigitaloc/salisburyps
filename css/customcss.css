@@ -938,7 +938,7 @@ span.overlay {
 }
 
 .hero-logo-image {
-  /* width: 500px; */
+  width: 500px;
 }
 
 .d-flex-col {
@@ -1622,6 +1622,10 @@ address span a:hover {
 
   .instagram-photo-container {
     margin: 0 5%;
+  }
+
+  .padtop-45 {
+    padding-top: 45px !important;
   }
 }
 
