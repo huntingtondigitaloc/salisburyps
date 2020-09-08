@@ -1019,7 +1019,6 @@ span.overlay {
 }
 
 .filterframe-gradientborder {
-  border: 5px solid transparent !important;
   -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #fe8b69 100%) !important;
   -webkit-border-image: -webkit-linear-gradient(
     top left,
@@ -1028,6 +1027,8 @@ span.overlay {
   ) !important;
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #fe8b69 100%) !important;
   border-image-slice: 1 !important;
+  border-width: 5px !important;
+  border-style: solid !important;
 }
 
 .filterframe {
