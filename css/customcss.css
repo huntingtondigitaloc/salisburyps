@@ -1074,6 +1074,11 @@ span.overlay {
   background-position: center;
 }
 
+.about_dysport {
+  background-image: url(../images-bunkis/procedures/dysport.jpg);
+  background-position: center;
+}
+
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;
