@@ -1069,6 +1069,11 @@ span.overlay {
   background-position: center;
 }
 
+.vanquish-bg {
+  background-image: url(../images-bunkis/procedures/vanquish-stomach.jpg);
+  background-position: center;
+}
+
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;
