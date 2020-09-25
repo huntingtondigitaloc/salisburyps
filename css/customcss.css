@@ -1079,6 +1079,21 @@ span.overlay {
   background-position: center;
 }
 
+.volbella-bg {
+  background-image: url(../images-bunkis/procedures/volbella.jpg);
+  background-position: center;
+}
+
+.about_radiesse {
+  background-image: url(../images-bunkis/procedures/radiesse.jpg);
+  background-position: center;
+}
+
+.about_radiesse2 {
+  background-image: url(../images-bunkis/procedures/radiesse-before.jpg);
+  background-position: center;
+}
+
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;
