@@ -1094,6 +1094,16 @@ span.overlay {
   background-position: center;
 }
 
+.about_biorev1 {
+  background-image: url(../images-bunkis/procedures/biorev-1.jpg);
+  background-position: center;
+}
+
+.about_biorev2 {
+  background-image: url(../images-bunkis/procedures/biorev-2.jpg);
+  background-position: center;
+}
+
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;

@@ -35,7 +35,7 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 .page-blog #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);}
 .page-shop #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);}
 .page-contact #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);} */
-.page-services #subheader{background: rgb(3,35,56);
+/* .page-services #subheader{background: rgb(3,35,56);
 	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);}
 .page-about #subheader{background: rgb(3,35,56);
 	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);}
@@ -44,7 +44,7 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 .page-shop #subheader{background: rgb(3,35,56);
 	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);}
 .page-contact #subheader{background: rgb(3,35,56);
-	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);}
+	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);} */
 
 /* background settings for section */
 #info-address{background:url(../images/background/bg-3.jpg) top fixed;}
@@ -68,7 +68,7 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 /* #section-welcome{background:url(../images-bunkis/landing/woman-in-white-coat-wearing-white-face-mask-3985163.jpg) top fixed;} */
 #section-welcome {
 	background: rgb(3,35,56);
-background: radial-gradient(circle, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);
+background: url(../images-bunkis/landing/hero-desktop.jpg);
 }
 #section-welcome-2{background:url(../images/background/bg-6.jpg) top fixed;}
 #section-welcome-3{background:url(../images/background/bg-7.jpg) top fixed;}
