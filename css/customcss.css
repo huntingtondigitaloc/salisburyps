@@ -1104,6 +1104,11 @@ span.overlay {
   background-position: center;
 }
 
+.bg-model-lingerie {
+  background-image: url(../images-bunkis/model-lingerie.jpeg);
+  background-position: top;
+}
+
 #section-welcome {
   display: flex;
   justify-content: center;
