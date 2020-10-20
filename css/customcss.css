@@ -1109,6 +1109,16 @@ span.overlay {
   background-position: top;
 }
 
+.about_morpheus1 {
+  background-image: url(../images-bunkis/products/morpheus8-tool.jpg);
+  background-position: center;
+}
+
+.about_morpheus2 {
+  background-image: url(../images-bunkis/products/morpheus8-face.jpg) !important;
+  background-position: center;
+}
+
 #section-welcome {
   display: flex;
   justify-content: center;
