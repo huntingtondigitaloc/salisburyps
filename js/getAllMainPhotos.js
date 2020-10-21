@@ -2,8 +2,8 @@ $(document).ready(createContentful());
 
 function createContentful() {
   var client = contentful.createClient({
-    space: "szbt0zwjreyq",
-    accessToken: "qL-R79I6HSdp5nvptoGUAgFqTVSU49kAOfZA3-zT2CU"
+    space: "f6vd1smd4uhx",
+    accessToken: "9NahCyZJlmnuRWhqhWzc7_jBtgBLKx6kwX1M5jvkqdw"
   });
 
   if (window.location.hash) {
