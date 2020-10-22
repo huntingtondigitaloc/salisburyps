@@ -92,14 +92,14 @@ function createContentful() {
 
       const photosProfileWrapper = `<div class="col-xs-12 col-sm-6 individual-profile-wrapper">
                                         <div class="individual-profile-details-container">
-                                            <p class="individual-profile-name">Dr. Bunkis</p>
+                                            <p class="individual-profile-name">Dr. Ekstrom</p>
                                             <p class="individual-profile-title">Medical Director</p>
                                             <p class="individual-profile-phone">
-                                                <a href="tel:+15622458339">562.245.8393</a>
+                                                <a href="tel:+15087554825">508.755.4825</a>
                                             </p>
                                         </div>
                                         <div class="individual-profile-photo-container">
-                                            <img src="../images-bunkis/dr-bunkis-headshot.jpg" alt="">
+                                            <img src="../images-bunkis/team/ekstrom.jpg" alt="dr deborah ekstrom headshot">
                                         </div>
                                     </div>`;
       mainRow.append(photosProfileWrapper);

@@ -1119,6 +1119,41 @@ span.overlay {
   background-position: center;
 }
 
+.breast-1 {
+  background-image: url(../images-bunkis/breast/breast-main-2.jpeg) !important;
+  background-position: center;
+}
+
+.breast-2 {
+  background-image: url(../images-bunkis/breast-test.jpg) !important;
+  background-position: center;
+}
+
+.breast-3 {
+  background-image: url(../images-bunkis/breast/breast-main-3.jpeg) !important;
+  background-position: center;
+}
+
+.breast-4 {
+  background-image: url(../images-bunkis/breast/breast-main-4.jpeg) !important;
+  background-position: center;
+}
+
+.lasergenesis_bg {
+  background-image: url(../images-bunkis/skin/laesr-genesis-main.jpg) !important;
+  background-position: center;
+}
+
+.zo3step {
+  background-image: url(../images-bunkis/skin/3step.jpg) !important;
+  background-position: center;
+}
+
+.biorev_bg {
+  background-image: url(../images-bunkis/skin/Biorevitalization-treatment-social-image.jpg) !important;
+  background-position: center;
+}
+
 #section-welcome {
   display: flex;
   justify-content: center;

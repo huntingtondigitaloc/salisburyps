@@ -25,10 +25,10 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 
 /* background settings for page subheader */
 /* .page-projects #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);} */
-.page-projects #subheader {
+/* .page-projects #subheader {
 	background: rgb(3,35,56);
 	background: linear-gradient(0deg, rgba(3,35,56,1) 0%, rgba(163,56,145,1) 100%);
-}
+} */
 .page-projects-alt #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);}
 /* .page-services #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);}
 .page-about #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);}
