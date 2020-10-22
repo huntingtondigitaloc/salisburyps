@@ -1,4 +1,4 @@
 <?php
-define('EMAIL_USER','hdwebsiteinfo@gmail.com');
-define('EMAIL_PASS','Ambroise!');
+define('EMAIL_USER','salisburypsforward@gmail.com');
+define('EMAIL_PASS','salisburyPS1!');
 ?>

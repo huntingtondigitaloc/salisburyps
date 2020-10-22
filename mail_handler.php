@@ -25,8 +25,8 @@ $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
 $mail->SMTPAuth = true;         // Enable SMTP authentication
 
 
-$mail->Username = 'hdwebsiteinfo@gmail.com';   // SMTP username
-$mail->Password = 'Ambroise!';   // SMTP password
+$mail->Username = 'salisburypsforward@gmail.com';   // SMTP username
+$mail->Password = 'salisburyPS1!';   // SMTP password
 $mail->SMTPSecure = 'tls';      // Enable TLS encryption, `ssl` also accepted, but TLS is a newer more-secure encryption
 $mail->Port = 587;              // TCP port to connect to
 $options = array(
@@ -39,8 +39,8 @@ $options = array(
 $mail->smtpConnect($options);
 $mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
 $mail->FromName = $_POST['name'];   // sender's name (shows in "From" field)
-$mail->addAddress('hdwebsiteinfo@gmail.com');  // Add a recipient (name is optional)
-$mail->addAddress('info@ocps.com');   // Add a second recipient
+$mail->addAddress('salisburypsforward@gmail.com');  // Add a recipient (name is optional)
+$mail->addAddress('mds@salisburyps.com');   // Add a second recipient
 $mail->addReplyTo($_POST['email']);             // Add a reply-to address
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
