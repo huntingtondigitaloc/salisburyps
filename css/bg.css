@@ -19,9 +19,9 @@ background-size: 100%;
 }
 
 /* general background image for subheader */
-#subheader{
+/* #subheader{
 background:url(../images-bunkis/texture_subheader.jpg)top fixed;
-}
+} */
 
 /* background settings for page subheader */
 /* .page-projects #subheader{background-image:url(../images-bunkis/texture_subheader.jpg);} */

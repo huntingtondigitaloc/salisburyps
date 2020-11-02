@@ -50,7 +50,7 @@ $mail->addReplyTo($_POST['email']);             // Add a reply-to address
 $mail->isHTML(true);                                  // Set email format to HTML
 
 // $mail->Subject = isset($_POST['inputState']) ? $_POST['inputState'] : '';
-$mail->Subject = "OCPS Website Contact Form";
+$mail->Subject = "Online Website Inquiry from " . $_POST['name'];
 
 // $mail->Body    = isset($_POST['formMessage']) ? $_POST['formMessage'] : '';
 $mail->Body = "Name : " . $_POST['name'] . "<br>" . " Email : " . $_POST['email'] . "<br>" . 

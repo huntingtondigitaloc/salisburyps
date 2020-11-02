@@ -421,7 +421,7 @@ span.overlay {
 }
 
 .project-name {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
 }
 
 .grid-item-banner {
@@ -1873,7 +1873,13 @@ nav li a {
   }
 
   .project-name {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .home-project-name {
     font-size: 1rem;
+    line-height: 1rem;
   }
 
   h2.style-5 {
