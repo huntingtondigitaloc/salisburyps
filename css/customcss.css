@@ -476,7 +476,7 @@ span.overlay {
 
 #view-all-projects:hover {
   cursor: pointer;
-  border: 10px solid #4ab8d0;
+  border: 2px solid #4ab8d0;
 }
 
 #view-all-projects:hover .view-all-projects-header {
