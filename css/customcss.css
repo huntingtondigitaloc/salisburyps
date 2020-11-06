@@ -606,6 +606,10 @@ span.overlay {
     background-color: #000;
 } */
 
+.my-patient-logo {
+  padding-bottom: 2rem;
+}
+
 .instagram-fetched {
   height: 100%;
   transition: all 0.3s ease-in-out;
@@ -1920,6 +1924,10 @@ nav li a {
 }
 
 @media only screen and (max-width: 414px) {
+  .my-patient-logo {
+    width: 100%;
+  }
+
   .about-us-team-photo {
     height: 140px;
   }
