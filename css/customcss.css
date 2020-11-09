@@ -1574,8 +1574,8 @@ address span a:hover {
 
 /* OFFICE SECTION */
 .office-outside-photo {
-  height: 520px;
-  object-position: bottom;
+  height: 650px;
+  object-position: middle;
 }
 
 .office-reception-image {
@@ -1930,6 +1930,10 @@ nav li a {
 
   .about-us-team-photo {
     height: 140px;
+  }
+
+  .office-outside-photo {
+    height: 300px;
   }
 
   #content {
