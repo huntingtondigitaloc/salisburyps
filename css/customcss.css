@@ -1944,6 +1944,10 @@ nav li a {
     height: 140px;
   }
 
+  .about-us-team-photo-divider {
+    height: auto;
+  }
+
   .office-outside-photo {
     height: 300px;
   }
