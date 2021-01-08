@@ -66,9 +66,13 @@ background:url(../images-bunkis/texture_subheader.jpg)top fixed;
 .de_light #section-about-us-2{background:none;}
 /* #section-welcome{background:url(../images/background/bg-4.jpg) top fixed;} */
 /* #section-welcome{background:url(../images-bunkis/landing/woman-in-white-coat-wearing-white-face-mask-3985163.jpg) top fixed;} */
-#section-welcome {
+/* #section-welcome {
 	background: rgb(3,35,56);
 background: url(../images-bunkis/landing/hero-darkgrey.jpeg);
+} */
+#section-welcome {
+	background: rgb(3,35,56);
+background: url(../images-bunkis/landing/hero-ekstrom.jpg);
 }
 #section-welcome-2{background:url(../images/background/bg-6.jpg) top fixed;}
 #section-welcome-3{background:url(../images/background/bg-7.jpg) top fixed;}
