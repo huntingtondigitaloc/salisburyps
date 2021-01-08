@@ -1935,7 +1935,7 @@ nav li a {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 530px) {
   .my-patient-logo {
     width: 100%;
   }
@@ -1954,6 +1954,10 @@ nav li a {
 
   .inner-padding {
     padding-top: 0;
+  }
+
+  .add-padding-top-mobile {
+    padding: 25px 0;
   }
 
   #landing-svg {
