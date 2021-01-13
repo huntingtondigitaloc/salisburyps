@@ -147,6 +147,58 @@ a.btn-slider {
   color: black !important;
 }
 
+#photos-feature {
+  background-image: url(/images-bunkis/granite-bg.jpg);
+}
+
+.photos-feature-row {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos-feature-row-2 {
+  padding-bottom: 15px;
+}
+
+.photos-feature-row h1 {
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.photos-feature-logo {
+  width: 70%;
+}
+
+.photos-feature-headshot {
+  width: 100%;
+}
+
+/* .photos-feature-flex-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.photos-feature-desc {
+  font-size: 2rem;
+}
+
+.photos-feature-button {
+  font-size: 2rem !important;
+  padding: 1.5rem 2.5rem !important;
+  border-radius: 35px !important;
+}
+
+.photos-feature-button,
+.photos-feature-desc {
+  color: white !important;
+}
+
 /* OWL CAROUSEL ON LANDING PAGE FOR REVIEWS */
 .owl-prev,
 .owl-next {
@@ -1031,13 +1083,21 @@ span.overlay {
 }
 
 .filterframe-gradientborder {
-  -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #fe8b69 100%) !important;
+  -moz-border-image: -moz-linear-gradient(
+    top left,
+    #3acfd5 0%,
+    #fe8b69 100%
+  ) !important;
   -webkit-border-image: -webkit-linear-gradient(
     top left,
     #3acfd5 0%,
     #fe8b69 100%
   ) !important;
-  border-image: linear-gradient(to bottom right, #3acfd5 0%, #fe8b69 100%) !important;
+  border-image: linear-gradient(
+    to bottom right,
+    #3acfd5 0%,
+    #fe8b69 100%
+  ) !important;
   border-image-slice: 1 !important;
   border-width: 5px !important;
   border-style: solid !important;
@@ -1053,8 +1113,8 @@ span.overlay {
 
 .d-flex-center-img {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .clarisonic-bg {
@@ -1187,7 +1247,6 @@ span.overlay {
   width: 350px;
 }
 
-
 @media only screen and (max-width: 768px) {
   .subheader-flex {
     height: 100%;
@@ -1255,7 +1314,8 @@ span.overlay {
     width: 100%;
   }
 
-  .hero-logo-new, .hero-logo-text {
+  .hero-logo-new,
+  .hero-logo-text {
     width: 250px;
   }
 }
@@ -2054,5 +2114,18 @@ nav li a {
 
   .photos-content-wrapper {
     padding-bottom: 1rem;
+  }
+
+  .photos-feature-row {
+    padding: 20px 0;
+  }
+
+  .photos-feature-logo {
+    width: 92%;
+  }
+
+  .photos-feature-desc,
+  .photos-feature-button {
+    font-size: 1.5rem !important;
   }
 }
