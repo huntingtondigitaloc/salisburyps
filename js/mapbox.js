@@ -1,13 +1,13 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoianlhdGFzbGFtIiwiYSI6ImNrNTVtdDVlNzB2dGwzam53cGJ2aHd4YXMifQ.1PbL8J1gbcLTRgvNoywJjg";
 
-var marker =  [-117.865944, 33.669702]; 
+var marker = [-117.865944, 33.669702];
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/light-v10",
   center: marker,
   zoom: 16,
-  pitch: 50
+  pitch: 50,
 });
 
 function rotateCamera(timestamp) {
@@ -25,14 +25,14 @@ var pulsingDot = {
   height: size,
   data: new Uint8Array(size * size * 4),
 
-  onAdd: function() {
+  onAdd: function () {
     var canvas = document.createElement("canvas");
     canvas.width = this.width;
     canvas.height = this.height;
     this.context = canvas.getContext("2d");
   },
 
-  render: function() {
+  render: function () {
     var duration = 1000;
     var t = (performance.now() % duration) / duration;
 
@@ -64,10 +64,10 @@ var pulsingDot = {
 
     // return `true` to let the map know that the image was updated
     return true;
-  }
+  },
 };
 
-map.on("load", function() {
+map.on("load", function () {
   // Start the animation.
   rotateCamera(0);
 
@@ -98,7 +98,7 @@ map.on("load", function() {
         15,
         0,
         15.05,
-        ["get", "height"]
+        ["get", "height"],
       ],
       "fill-extrusion-base": [
         "interpolate",
@@ -107,10 +107,10 @@ map.on("load", function() {
         15,
         0,
         15.05,
-        ["get", "min_height"]
+        ["get", "min_height"],
       ],
-      "fill-extrusion-opacity": 0.6
-    }
+      "fill-extrusion-opacity": 0.6,
+    },
   });
 
   map.addImage("pulsing-dot", pulsingDot, { pixelRatio: 2 });
@@ -127,42 +127,47 @@ map.on("load", function() {
             type: "Feature",
             geometry: {
               type: "Point",
-              coordinates: marker
-            }
-          }
-        ]
-      }
+              coordinates: marker,
+            },
+          },
+        ],
+      },
     },
     layout: {
-      "icon-image": "pulsing-dot"
-    }
+      "icon-image": "pulsing-dot",
+    },
   });
 });
 
 // create the popup
 // var popup = new mapboxgl.Popup({ offset: 25 })
-// .setText('Orange County Plastic Surgery, LLC 15878 Jamboree Rd, Irvine CA');
- 
+// .setText('Salisbury Plastic Surgery, LLC 15878 Jamboree Rd, Irvine CA');
+
 // create DOM element for the marker
 var el = pulsingDot;
- 
+
 // create the marker
 new mapboxgl.Marker(el)
-.setLngLat(marker)
-// .setPopup(popup) 
-.addTo(map);
+  .setLngLat(marker)
+  // .setPopup(popup)
+  .addTo(map);
 
 // disable map zoom when using scroll
 map.scrollZoom.disable();
 
 // Check what native maps app the user is using
 function mapsSelector() {
-  if /* if we're on iOS, open in Apple Maps */
-    ((navigator.platform.indexOf("iPhone") != -1) || 
-     (navigator.platform.indexOf("iPod") != -1) || 
-     (navigator.platform.indexOf("iPad") != -1))
-    window.open("maps://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
-
-  else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll=");
+  if (
+    /* if we're on iOS, open in Apple Maps */
+    navigator.platform.indexOf("iPhone") != -1 ||
+    navigator.platform.indexOf("iPod") != -1 ||
+    navigator.platform.indexOf("iPad") != -1
+  )
+    window.open(
+      "maps://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll="
+    );
+  /* else use Google */ else
+    window.open(
+      "https://maps.google.com/maps?daddr=33.669702,-117.865944&amp;ll="
+    );
 }
