@@ -199,6 +199,21 @@ a.btn-slider {
   color: white !important;
 }
 
+.ocps-staff-logo {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.margin-padding-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.staff-square-photo {
+  width: 100%;
+  object-fit: contain;
+}
+
 /* OWL CAROUSEL ON LANDING PAGE FOR REVIEWS */
 .owl-prev,
 .owl-next {
