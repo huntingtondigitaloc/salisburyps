@@ -149,6 +149,29 @@ a.btn-slider {
 
 #photos-feature {
   background-image: url(/images-bunkis/granite-bg.jpg);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.photos-feature-header {
+  font-size: 6rem;
+  padding-bottom: 4rem;
+}
+
+#photos-feature h1,
+#photos-feature h2,
+#photos-feature h3 {
+  color: white;
+  text-align: center;
+}
+
+#photos-feature h2 {
+  font-weight: 600;
+}
+
+.photos-feature-p {
+  line-height: 2.8rem;
+  padding-bottom: 2rem;
 }
 
 .photos-feature-row {
@@ -161,6 +184,19 @@ a.btn-slider {
 
 .photos-feature-row-2 {
   padding-bottom: 15px;
+}
+
+.photos-feature-image {
+  width: 50%;
+}
+
+.photos-feature-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1rem 5rem;
 }
 
 .photos-feature-row h1 {
@@ -189,7 +225,7 @@ a.btn-slider {
 }
 
 .photos-feature-button {
-  font-size: 2rem !important;
+  font-size: 1.4rem !important;
   padding: 1.5rem 2.5rem !important;
   border-radius: 35px !important;
 }
@@ -697,7 +733,7 @@ span.overlay {
 
 @media only screen and (max-width: 1800px) {
   .instagram-photo-container {
-    margin: 0 20%;
+    margin: 0 15%;
   }
 }
 
@@ -1801,7 +1837,7 @@ address span a:hover {
 
 @media only screen and (max-width: 1800px) {
   .instagram-photo-container {
-    margin: 0 20%;
+    margin: 0 15%;
   }
 }
 
@@ -2011,6 +2047,28 @@ nav li a {
 }
 
 @media only screen and (max-width: 530px) {
+  .flex-column-mobile {
+    flex-direction: column;
+  }
+
+  .photos-feature-image,
+  .photos-feature-text-container {
+    width: 100%;
+  }
+
+  .photos-feature-text-container {
+    padding-bottom: 3rem;
+  }
+
+  #photos-feature .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .photos-feature-header {
+    font-size: 32px;
+  }
+
   .my-patient-logo {
     width: 100%;
   }
