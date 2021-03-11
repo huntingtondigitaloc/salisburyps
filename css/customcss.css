@@ -218,6 +218,11 @@ a.btn-slider {
   width: 100%;
 }
 
+.specials-coming-soon {
+  text-align: center;
+  margin: 4rem auto;
+}
+
 /* .photos-feature-flex-column {
   height: 100%;
   display: flex;
