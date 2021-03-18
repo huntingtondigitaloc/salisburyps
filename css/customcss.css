@@ -153,9 +153,10 @@ a.btn-slider {
 }
 
 #photos-feature {
-  background-image: url(/images-bunkis/granite-bg.jpg);
+  /* background-image: url(/images-bunkis/granite-bg.jpg); */
   padding-top: 12rem;
   padding-bottom: 12rem;
+  background: rgb(245, 245, 245) !important;
 }
 
 .photos-feature-header {
@@ -166,7 +167,7 @@ a.btn-slider {
 #photos-feature h1,
 #photos-feature h2,
 #photos-feature h3 {
-  color: white;
+  color: #222;
   text-align: center;
 }
 
@@ -207,7 +208,7 @@ a.btn-slider {
 
 .photos-feature-row h1 {
   padding-bottom: 1rem;
-  color: white;
+  color: #222;
 }
 
 .photos-feature-logo {
@@ -243,7 +244,7 @@ a.btn-slider {
 
 .photos-feature-button,
 .photos-feature-desc {
-  color: white !important;
+  color: #222 !important;
 }
 
 .ocps-staff-logo {
@@ -259,6 +260,14 @@ a.btn-slider {
 .staff-square-photo {
   width: 100%;
   object-fit: contain;
+}
+
+.feature-span {
+  color: #55b4be;
+}
+
+.photos-feature-first-image {
+  width: 100%;
 }
 
 /* OWL CAROUSEL ON LANDING PAGE FOR REVIEWS */
@@ -2055,6 +2064,14 @@ nav li a {
   .nav-logo-scrolled {
     height: 74px;
   }
+
+  #photos-feature h2 {
+    font-size: 2rem;
+  }
+
+  .photos-feature-button {
+    padding: .8rem 1.8rem !important;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -2069,6 +2086,12 @@ nav li a {
 
   .photos-feature-text-container {
     padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #photos-feature h2 {
+    font-size: 2rem;
   }
 
   #photos-feature .container {
