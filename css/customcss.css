@@ -20,6 +20,18 @@ h2.style-5 {
   font-family: "futura-pt", sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
 .st3 {
   fill: #dddddd !important;
 }
@@ -911,6 +923,15 @@ span.overlay {
   color: grey;
   text-align: center;
   line-height: 1.8rem;
+}
+
+.single-blog-image-container  {
+  display: flex;
+}
+
+.single-blog-image-container > img {
+  width: 50%;
+  border: 1px solid lightgrey;
 }
 
 /* .sub-team-container-flex {
