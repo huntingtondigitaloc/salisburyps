@@ -58,6 +58,23 @@ a.btn-slider {
   transition: all ease-in-out 0.3s;
 }
 
+.header-3d-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-3d {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+div#ucom-desktop-container {
+  max-width: 100%;
+}
+
 .blog-text-larger {
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2030,6 +2047,10 @@ nav li a {
 @media only screen and (max-width: 768px) {
   #subheader {
     height: 300px;
+  }
+
+  .header-3d {
+    text-align: center;
   }
 
   .hero-svg-top {
