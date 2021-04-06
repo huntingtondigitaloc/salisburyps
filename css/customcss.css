@@ -28,6 +28,10 @@ h2.style-5 {
   font-style: italic;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .center {
   text-align: center;
 }
