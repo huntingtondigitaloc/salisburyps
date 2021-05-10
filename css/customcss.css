@@ -81,7 +81,8 @@ div#ucom-desktop-container {
 
 .blog-text-larger {
   font-size: 1.6rem;
-  line-height: 2.6rem;
+  line-height: 2.9rem;
+  letter-spacing: .06rem;
 }
 
 /* .discover-photo-square:hover {
@@ -2350,5 +2351,9 @@ nav li a {
 
   #section-service-3.side-bg .background-image-virtual-seminars {
     background-position-x: 26%;
+  }
+  .blog-text-larger {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
   }
 }
