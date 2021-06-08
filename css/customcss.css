@@ -228,7 +228,8 @@ div#ucom-desktop-container {
 
 .photos-feature-image {
   width: 50%;
-  height: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .photos-feature-text-container {
