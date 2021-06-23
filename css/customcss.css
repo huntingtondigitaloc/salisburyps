@@ -259,6 +259,10 @@ div#ucom-desktop-container {
   margin: 4rem auto;
 }
 
+.full-length-image {
+  width: 50%;
+}
+
 /* .photos-feature-flex-column {
   height: 100%;
   display: flex;
@@ -2179,6 +2183,10 @@ nav li a {
 }
 
 @media only screen and (max-width: 530px) {
+  .full-length-image {
+    width: 90%;
+  }
+
   .flex-column-mobile {
     flex-direction: column;
   }
