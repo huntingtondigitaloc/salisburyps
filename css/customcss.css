@@ -1516,6 +1516,72 @@ span.overlay {
   cursor: pointer;
 }
 
+.hero-banner-bottom {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: black;
+  padding: 3rem 15%;
+  border: 1px solid white;
+}
+
+.hero-banner-bottom h3 {
+  background: #1b4f92;
+  background: -webkit-linear-gradient(to right, #1b4f92 0%, #e74c39 100%);
+  background: -moz-linear-gradient(to right, #1b4f92 0%, #e74c39 100%);
+  background: linear-gradient(to right, #1b4f92 0%, #e74c39 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.hero-banner-bottom p {
+  color: white;
+  margin-bottom: 0;
+}
+
+.arrow
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+
+  /**
+   * Dark Arrow Down
+   */
+   background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg==");
+  background-size: contain;
+  filter: invert(1);
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 .contact-location-wrapper {
   padding: 45px 0 25px;
 }
