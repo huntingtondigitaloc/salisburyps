@@ -1994,6 +1994,18 @@ address span a:hover {
     background-color: #000;
 } */
 
+
+.landing-specials-img {
+  width: 50%;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .landing-specials-img {
+    width: 100%;
+  }
+}
+
 .instagram-fetched {
   height: 100%;
   transition: all 0.3s ease-in-out;
