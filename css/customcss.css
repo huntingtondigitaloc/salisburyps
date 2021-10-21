@@ -578,6 +578,29 @@ span.overlay {
   transition: all 1s;
 }
 
+.procedure-videos-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.procedure-videos-container h3 {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.procedure-videos-container iframe {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .procedure-videos-container iframe {
+    width: 100% !important;
+    height: 250px !important;
+    padding: 0 1rem;
+  }
+}
+
 .grid-item:hover span.overlay {
   background: transparent;
 }
